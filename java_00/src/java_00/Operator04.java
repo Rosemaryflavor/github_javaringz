@@ -68,5 +68,7 @@ System.out.println("당신의 평균 점수는" + avg + "이고," + avgResult + 
 
 
 
+
+
 }
 }
