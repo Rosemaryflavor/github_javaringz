@@ -76,7 +76,6 @@ public class IfEx01 {
 			System.out.println("달(월)은 1월~12월까지만 있다.");
 		}
 		
-sc.close();
-	}
-
+		sc.close();
+		}
 }
