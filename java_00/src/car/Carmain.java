@@ -16,7 +16,38 @@ public class Carmain {
 		c1.setWheel(4);
 		c1.setSeat(4);
 		c1.setFuel("휘발유");
-		
+		System.out.println(c1.carInfo());
+        
+		Truck c2 = new Truck();
+		c2.setModel("트럭");
+		c2.setWheel(4);
+		c2.setSeat(4);
+	    c2.setFuel("휘발유");
+		System.out.println(c2.carInfo());
 	}
-
+	
+	carList[0] = new Truck("", 12, 3 , "경유", 5.5);
+	carList[1] = new LightCar("", 4, 4, "휘발유", 0.7);
+	carList[2] = new Car("", 4, 2, "전기");
+	
+	for (Car c : carList) {
+		System.out.println(c.carInfo());
+	}
+	
+	String carModel = "";
+	
+	if(c instanceof Truck) {
+	   c.setModel("10톤 트럭"); 
+	} else if (c instanceof LightCar) {
+		c.setModel("레이");
+	} else {
+		c.setModel("제네시스");
+		System.out.println(carModel);
+	}
+	
+	c.setModel(carModel);
+	System.out.println(c.carInfo());
+	
+	
+}
 }

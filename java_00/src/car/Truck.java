@@ -4,8 +4,8 @@ public class Truck extends Car {
 
 	private double weight;
 	
-	public Truck() {
-		
+	public Truck(String arg1, int arg2, int arg3, String arg4, double arg5) {
+		this.weight = arg5;
 	}
 
 	public double getWeight() {
