@@ -2,15 +2,27 @@ package car;
 
 public class Lightcar extends Car {
 
-	private double discountOffer;
+	private double discountOffer;	// 경차 할인율
 	
 	public Lightcar() {
 		
 	}
 	
-	public Lightcar(String arg1, int arg2, int arg3, String arg4) {
-		this.discountOffer = arg5;
-		super(arg1, arg2, arg3, arg4);
+	public Lightcar(String model, int wheel, int seat, String fuel, double discountOffer) {
+		super(model, wheel, seat, fuel);
+		this.discountOffer = discountOffer;
+	}
+	
+	public String carInfo() {
+		String result = "";
+		
+		result += "[ 차종 ] : " + model + "\n";
+		result += "[ 바퀴 수 ] : " + wheel + "\n";
+		result += "[ 좌석 수 ] : " + seat + "\n";
+		result += "[ 연료 ] : " + fuel + "\n";
+		result += "[ 할인 혜택 ] : " + discountOffer + "\n";
+		
+		return result;
 	}
 
 	public double getDiscountOffer() {
